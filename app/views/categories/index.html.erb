@@ -1,0 +1,24 @@
+<div class="catas">
+<div class="cat">
+<%= render "sharred/menu" %>
+<h1 class="cat">CATEGORIES</h1>
+<%= image_tag("search.png", class: "img") %>
+</div>
+<% if @categories.any? %>
+  <ul class="category">
+    <% @categories.each do |category| %>
+      <li class="cat-list">
+        <div class="div"><%= image_tag url_for(category.icon), alt: category.name, class: "cat-image" %>
+        <%= link_to category.name, category_expenses_path(category_id: category.id), class: "link" %></div>
+        <div class="cat-details">
+        <p><%= number_to_currency(category.total_amount) %></p></div>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No categories available.</p>
+<% end %>
+<%= link_to "Add a new category", new_category_path, class: "newCategory" %>
+</div>
+
+

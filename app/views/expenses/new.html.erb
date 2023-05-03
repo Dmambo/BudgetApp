@@ -1,0 +1,10 @@
+<h1>New Expense</h1>
+
+<%= simple_form_for([@category, @expense], url: category_expenses_path(@category)) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :amount %>
+  <%= f.input :category_ids, collection: Category.all, label: 'Categories', prompt: 'Select categories' %>
+
+  <%= f.button :submit %>
+  <%= link_to 'Back', category_expenses_path(@category) %>
+<% end %>

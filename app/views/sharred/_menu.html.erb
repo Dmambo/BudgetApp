@@ -1,0 +1,17 @@
+<div class="dropdown">
+  <button class="btn btn-outline border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" onclick="toggleDropdown()">
+    <%= image_tag("hamburger.png", class: "img") %>
+  </button>
+  <ul class="dropdown-menu rounded-0 bg-color" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Home</a></li>
+    <li><%= link_to "Update profile ", edit_user_registration_path, class: "dropdown-item d-none" %></li>
+    <li><%= button_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %></li>
+  </ul>
+</div>
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.querySelector('.dropdown');
+    dropdown.classList.toggle('show-dropdown');
+  }
+</script>

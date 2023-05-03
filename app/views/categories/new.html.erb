@@ -1,0 +1,11 @@
+
+<%= simple_form_for @category, html: { class: 'category-form' } do |f| %>
+<div class="cat">
+<%= link_to image_tag("left-arrow.png"), categories_path %>
+<h1 class="new">NEW CATEGORY</h1>
+ <%= f.button :submit, 'save', class: 'submit-button'%></div>
+  <%= f.input :name, label_html: { class: 'category-label' }, input_html: { class: 'category-input' } %>
+  <%= f.input :icon, input_html: { class: 'category-input' } %>
+ 
+<% end %>
+
