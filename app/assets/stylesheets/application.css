@@ -10,9 +10,11 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+*= require_tree .
+*= require_self
+
  */
+@import 'bootstrap/css/bootstrap';
 
 #splash {
   display: flex;
@@ -21,6 +23,154 @@
   flex-direction: column;
   height: 100vh;
   margin-bottom: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 768px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'proxima-nova', sans-serif;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  color: #434b54;
+}
+
+.header {
+  background-color: #3778c2;
+  color: #fff;
+  padding: 16px 8px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bg-color {
+  background-color: #3778c2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8f9fa;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bi-arrow-left {
+  font-size: 24px;
+}
+
+.form-control {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-outline-primary {
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+#splash {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#splash h1 {
+  margin: auto;
+}
+
+#splash .position-absolute {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#splash .btn {
+  border-radius: 0;
+}
+
+#splash .btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+#splash .btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+#splash .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+#splash .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+#splash a:hover {
+  border: none;
+  background-color: #3778c2;
+  color: #fff;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-color {
+  background-color: #5fb523;
+  color: #fff;
+}
+
+.btn-color:hover {
+  background-color: #5fb523;
+  color: #fff;
 }
 
 .logo {
@@ -49,6 +199,8 @@
   text-decoration: none;
   font-size: 20px;
   color: #434b54;
+  border: 0;
+  border-radius: 0;
 }
 
 .btn:hover {
@@ -59,6 +211,7 @@
   height: 100vh;
   margin-bottom: 0;
 }
+
 .cat,
 h1 {
   display: flex;
@@ -253,4 +406,40 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-item {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.item-name {
+  flex: 1;
+}
+
+.item-amount {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    width: 100%;
+  }
 }

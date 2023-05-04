@@ -1,10 +1,14 @@
-<h1>New Expense</h1>
+<div class="container d-flex flex-column justify-content-between vh-100 bg-light px-0"> 
 
 <%= simple_form_for([@category, @expense], url: category_expenses_path(@category)) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :amount %>
-  <%= f.input :category_ids, collection: Category.all, label: 'Categories', prompt: 'Select categories' %>
-
-  <%= f.button :submit %>
+<div class="d-flex justify-content-between align-items-center header"> 
   <%= link_to 'Back', category_expenses_path(@category) %>
+  <span class="text-uppercase">New Transaction</span>
+  <%= f.submit "Save", class: "btn text-white border-0" %>
+ </div>
+  <%= f.input :name , label_html: {class: "form-control rounded-0 shadow-none"},  input_html: { class: 'category-input' }%>
+  <%= f.input :amount , label_html: {class: "form-control rounded-0 shadow-none"},  input_html: { class: 'category-input' }%>
+  <%= f.input :category_ids, collection: Category.all, label: 'Categories', prompt: 'Select categories', label_html: {class: "form-control rounded-0 shadow-none"}, input_html: { class: 'category-input' } %>
+  <%= f.hidden_field :author_id, value: current_user.id %>
 <% end %>
+</div>
