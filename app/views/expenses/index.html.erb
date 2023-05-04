@@ -9,27 +9,17 @@
     <div><strong>Total amount:</strong> <%= number_to_currency(@total_amount) %></div>
 </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Amount</th>
-      <th>Categories</th>
-      <th>Date</th>
-    </tr>
-  </thead>
+<ul class="list rounded-0 px-3 mt-3">
+  <% @expenses.each do |expense| %>
+    <li class="list-item shadow justify-content-between align-items-center mb-3">
+      <div class="item-container">
+        <span class="item-name"><%= expense.name %></span>
+        <span class="item-amount"><%= number_to_currency(expense.amount) %></span>
+      </div>
+    </li>
+  <% end %>
+</ul>
 
-  <tbody>
-    <% @expenses.each do |expense| %>
-      <tr>
-        <td><%= expense.name %></td>
-        <td><%= number_to_currency(expense.amount) %></td>
-        <td><%= expense.categories.map(&:name).join(', ') %></td>
-        <td><%= expense.created_at.strftime('%d %b %Y') %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+
 
 <%= link_to 'Add Transaction', new_category_expense_path(@category), class: 'newCategory' %>
-
