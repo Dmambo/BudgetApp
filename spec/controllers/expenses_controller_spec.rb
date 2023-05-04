@@ -3,9 +3,11 @@ require 'rails_helper'
 RSpec.describe ExpensesController, type: :controller do
   include ActionDispatch::TestProcess
   let(:user) { FactoryBot.create(:user, email: Faker::Internet.unique.email) }
-  let(:category) { FactoryBot.create(:category, user_id: user.id, icon: fixture_file_upload('search.png', 'image/png')) }
-  let(:expense) {FactoryBot.create(:expense, author: user)}
-  let(:category_expense) {FactoryBot.create(:category_expense, category: category, expense: expense )}
+  let(:category) do
+    FactoryBot.create(:category, user_id: user.id, icon: fixture_file_upload('search.png', 'image/png'))
+  end
+  let(:expense) { FactoryBot.create(:expense, author: user) }
+  let(:category_expense) { FactoryBot.create(:category_expense, category:, expense:) }
 
   before do
     user.save

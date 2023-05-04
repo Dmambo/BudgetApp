@@ -15,8 +15,8 @@ RSpec.describe 'categories/new.html.erb', type: :feature do
     expect(category.name).to eq('Test Category')
     expect(category.icon.attached?).to eq(true)
   end
-  
-  
+
+
 
   it 'does not create a new category without a name' do
     category = Category.new
