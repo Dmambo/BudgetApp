@@ -60,7 +60,7 @@ You will create a Ruby on Rails application that allows the user to:
 
 ## Live Demo <a name="live-demo"></a>
 
-Click to observe the [live project]()
+Click to observe the [live project](https://tariq-budget-app.onrender.com/)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -68,7 +68,7 @@ Click to observe the [live project]()
 
 ## Presentation <a name="live-presentation"></a>
 
-Click to watch the [presentation on project]()
+Click to watch the [presentation on project](https://www.loom.com/share/e5f4e36b3f754b3389c6cb9e69024917)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -124,7 +124,7 @@ Click to watch the [presentation on project]()
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Md Tariq-ul Islam**
+👤 \*Diaby Mohammed Ibrahim \*\*
 
 - [GitHub](https://github.com/dmambo)
 - [Twitter](https://twitter.com/kingibro345)

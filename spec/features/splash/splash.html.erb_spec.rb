@@ -6,7 +6,7 @@ RSpec.describe 'splash/splash.html.erb', type: :feature do
   end
 
   it 'renders successfully' do
-    expect(page).to have_content('Adedamola')
+    expect(page).to have_content('ADE-BUDGET')
     expect(page).to have_content('LOG IN')
     expect(page).to have_content('SIGN UP')
   end
