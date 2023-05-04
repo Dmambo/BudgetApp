@@ -2,7 +2,9 @@ require 'rails_helper'
 
 RSpec.describe Expense, type: :model do
   let(:user) { User.create(name: 'test', email: 'test@example.com', password: 'password') }
-  let(:category) { Category.create(name: 'Test', icon: fixture_file_upload('search.png', 'image/png'), user_id: user.id) }
+  let(:category) do
+    Category.create(name: 'Test', icon: fixture_file_upload('search.png', 'image/png'), user_id: user.id)
+  end
 
   describe 'validations' do
     it { should validate_presence_of(:name) }

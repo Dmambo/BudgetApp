@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Category, type: :model do
   let(:user) { User.create(name: 'test', email: 'test@example.com', password: 'password') }
-  
+
 
   describe 'validations' do
     it { should validate_presence_of(:name) }

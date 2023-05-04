@@ -5,7 +5,7 @@ RSpec.describe User, type: :model do
     it { should validate_presence_of(:name) }
     it { should validate_presence_of(:email) }
     it { should have_many(:categories).with_foreign_key(:author_id) }
-    it { should have_many(:expenses).with_foreign_key(:author_id) }    
+    it { should have_many(:expenses).with_foreign_key(:author_id) }
     it { should validate_presence_of(:password) }
     it { should validate_length_of(:password).is_at_least(6) }
     it { should allow_value('email@example.com').for(:email) }
@@ -13,17 +13,17 @@ RSpec.describe User, type: :model do
 
 
     it 'requires name to be set' do
-        user = User.new(name: nil, email: 'test@example.com', password: 'password')
-        expect(user).not_to be_valid
-        expect(user.errors[:name]).to include("can't be blank")
-      end
-      
-    it 'requires email to be set' do
-        user = User.new(name: 'Test', email: nil, password: 'password')
-        expect(user).not_to be_valid
-        expect(user.errors[:email]).to include("can't be blank")
+      user = User.new(name: nil, email: 'test@example.com', password: 'password')
+      expect(user).not_to be_valid
+      expect(user.errors[:name]).to include("can't be blank")
     end
-      
+
+    it 'requires email to be set' do
+      user = User.new(name: 'Test', email: nil, password: 'password')
+      expect(user).not_to be_valid
+      expect(user.errors[:email]).to include("can't be blank")
+    end
+
 
     it 'is valid with a name and an email' do
       user = User.new(name: 'Test', email: 'test@example.com', password: 'password')

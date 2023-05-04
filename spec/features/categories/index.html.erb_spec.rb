@@ -1,11 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe 'categories/index.html.erb', type: :feature do
-    let(:user) { User.create(name: 'test', email: 'test@example.com', password: 'password') }
-    let(:category) { Category.create(name: 'Groceries', icon: fixture_file_upload('search.png', 'image/png')) }    
+  let(:user) { User.create(name: 'test', email: 'test@example.com', password: 'password') }
+  let(:category) { Category.create(name: 'Groceries', icon: fixture_file_upload('search.png', 'image/png')) }
 
   let(:expense) { Expense.create(name: 'Test', amount: 10, author: user) }
-  let(:category_expense) { CategoryExpense.create(category: category, expense: expense) }
+  let(:category_expense) { CategoryExpense.create(category:, expense:) }
 
   before do
     sign_in user
