@@ -68,7 +68,7 @@ Click to observe the [live project](https://tariq-budget-app.onrender.com/)
 
 ## Presentation <a name="live-presentation"></a>
 
-Click to watch the [presentation on project](https://www.loom.com/share/325866b6b2364b0c849294745d1a13a7)
+Click to watch the [presentation on project](https://www.loom.com/share/e2454b976c164c13a2a3eb8f3dbbaff7)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
