@@ -60,7 +60,7 @@ You will create a Ruby on Rails application that allows the user to:
 
 ## Live Demo <a name="live-demo"></a>
 
-Click to observe the [live project]()
+Click to observe the [live project](https://tariq-budget-app.onrender.com/)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -68,7 +68,7 @@ Click to observe the [live project]()
 
 ## Presentation <a name="live-presentation"></a>
 
-Click to watch the [presentation on project]()
+Click to watch the [presentation on project](https://www.loom.com/share/e2454b976c164c13a2a3eb8f3dbbaff7)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -94,7 +94,7 @@ Click to watch the [presentation on project]()
 
 ### Setup
 
-- Clone this repository by running `git clone https://github.com/developertariq/budget-app.git` in your command line.
+- Clone this repository by running `git clone https://github.com/Dmambo/BudgetApp` in your command line.
 
 - Navigate to the repository by running `cd my-blog`.
 
@@ -124,7 +124,7 @@ Click to watch the [presentation on project]()
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Md Tariq-ul Islam**
+👤 \*Diaby Mohammed Ibrahim \*\*
 
 - [GitHub](https://github.com/dmambo)
 - [Twitter](https://twitter.com/kingibro345)
@@ -145,7 +145,7 @@ Click to watch the [presentation on project]()
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/developertariq/budget-app/issues)
+Feel free to check the [issues page](https://github.com/Dmambo/BudgetApp/issues)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
